@@ -28,22 +28,21 @@
         
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
         .skill-category h3 { font-size: 1.1rem; color: var(--accent); margin-bottom: 0.75rem; }
-        .skill-category ul { list-style: none; }
-        .skill-category li { margin-bottom: 0.4rem; font-size: 0.95rem; display: flex; align-items: center; }
-        .skill-category li::before { content: "•"; color: var(--accent); font-weight: bold; display: inline-block; width: 1em; margin-left: -0.25em; }
         
         /* Interactive Tech Tags */
         .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
         .tag { background: #eff6ff; color: #1e40af; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 500; border: 1px solid #bfdbfe; }
         
-        /* Case Study Project Styling */
+        /* Project Styling */
         .project-block { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px dashed var(--border); }
         .project-block:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
         .project-block h3 { font-size: 1.2rem; color: var(--secondary); margin-bottom: 0.5rem; }
         .project-meta { font-size: 0.9rem; margin-bottom: 0.5rem; }
         .project-meta strong { color: var(--accent); }
-        .project-details { margin-left: 1.25rem; margin-top: 0.5rem; }
-        .project-details li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+        
+        .project-item { margin-bottom: 1.5rem; border-left: 3px solid var(--accent); padding-left: 1rem; }
+        .project-item h3 { font-size: 1.1rem; color: var(--secondary); margin-bottom: 0.25rem; }
+        .project-item p { font-size: 0.95rem; }
 
         .job { margin-bottom: 2.5rem; }
         .job:last-child { margin-bottom: 0; }
@@ -82,48 +81,48 @@
         <!-- Summary -->
         <section id="summary">
             <h2>Professional Profile</h2>
-            <p>Accomplished Technical Lead and User Acceptance Testing (UAT) Specialist with over 15 years of experience driving digital product validation, software quality assurance, and cross-functional engineering projects. Proven track record within the heavy-duty automotive diagnostics domain, leading comprehensive test planning, bug tracking, and release engineering for crucial service tools. Exceptional background in industrial leadership, combining robust technical expertise in networking infrastructures and unified protocols with a foundational mastery of precision tool-and-die manufacturing[cite: 2, 3]. Adept at leveraging enterprise AI utilities and localized scripting to automate complex validation pipelines and decode telemetry trace data.</p>
+            <p>Accomplished Technical Lead and User Acceptance Testing (UAT) Specialist with over 15 years of experience driving digital product validation, software quality assurance, and cross-functional engineering projects[cite: 3]. Proven track record within the heavy-duty automotive diagnostics domain, leading comprehensive test planning, bug tracking, and release engineering for crucial service tools[cite: 3]. Exceptional background in industrial leadership, combining robust technical expertise in networking infrastructures and unified protocols with a foundational mastery of precision tool-and-die manufacturing[cite: 3]. Adept at leveraging enterprise AI utilities, localized scripting, and collaborative environments to automate validation pipelines, manage change tracking, and decode complex telemetry trace data.</p>
         </section>
 
-        <!-- Dynamic Tech Stack Grid -->
+        <!-- Technical Environment Stack Section -->
         <section id="tech-stack">
             <h2>Technical Environment Stack</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Platforms & Systems</h3>
+                    <h3>Diagnostic Platforms</h3>
                     <div class="tag-cloud">
                         <span class="tag">Cummins INSITE</span>
-                        <span class="tag">Guidanz DTK</span>
-                        <span class="tag">PTC Integrity</span>
-                        <span class="tag">SharePoint</span>
-                        <span class="tag">Home Assistant</span>
+                        <span class="tag">Guidanz DTK (Windows & Mobile)</span>
+                        <span class="tag">OTIS Platform</span>
+                        <span class="tag">UDS Trace Log Analysis</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Protocols & Data</h3>
+                    <h3>Protocols & Data Links</h3>
                     <div class="tag-cloud">
-                        <span class="tag">UDS Protocol</span>
-                        <span class="tag">SAE J1939</span>
+                        <span class="tag">UDS Protocol (ISO 14229)</span>
+                        <span class="tag">SAE J1939 Architecture</span>
                         <span class="tag">Hex Log Metrics</span>
-                        <span class="tag">UDS Trace Data</span>
+                        <span class="tag">Network Infrastructure</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Languages & Automation</h3>
+                    <h3>Systems & Productivity</h3>
                     <div class="tag-cloud">
-                        <span class="tag">Python (Basic)</span>
-                        <span class="tag">Excel VBA</span>
-                        <span class="tag">YAML</span>
-                        <span class="tag">Enterprise Codex</span>
-                        <span class="tag">MS Office 365</span>
+                        <span class="tag">PTC Integrity</span>
+                        <span class="tag">SharePoint Administration</span>
+                        <span class="tag">MS Office 365 Suite</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">JIRA & Testrail</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Methodologies</h3>
+                    <h3>Leadership & Quality</h3>
                     <div class="tag-cloud">
-                        <span class="tag">UAT Execution</span>
+                        <span class="tag">Cross-Team Collaboration</span>
+                        <span class="tag">Stakeholder Management</span>
                         <span class="tag">Six Sigma Yellow Belt</span>
-                        <span class="tag">L3 Support</span>
+                        <span class="tag">Change Management</span>
                         <span class="tag">Root Cause Analysis</span>
                     </div>
                 </div>
@@ -133,8 +132,8 @@
         <!-- Personal Lab & About Me -->
         <section id="about-me">
             <h2>About Me & Personal Tech Lab</h2>
-            <p style="margin-bottom: 1rem;">Beyond my professional role, I am an active technology enthusiast and an early adopter of emerging hardware and open-source ecosystems. I view engineering as both a career and a continuous learning playground, frequently building, testing, and self-hosting projects in my personal environment:</p>
-            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
+            <p style="margin-bottom: 1rem;">Beyond my professional role, I am an active technology enthusiast and an early adopter of emerging hardware and open-source ecosystems. I view engineering as a continuous learning playground, frequently building, testing, and self-hosting projects in my personal environment:</p>
+            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.25rem;">
                 <div style="border-left: 2px solid var(--accent); padding-left: 0.75rem;">
                     <h4 style="color: var(--secondary); font-size: 1rem; margin-bottom: 0.25rem;">Smart Home Automation</h4>
                     <p style="font-size: 0.9rem;">Architected and maintain an extensive deployment utilizing <strong>Home Assistant</strong> to unify local smart home sensors, custom scripts, and automation routines, prioritizing privacy and local control.</p>
@@ -144,7 +143,7 @@
                     <p style="font-size: 0.9rem;">Deploy and experiment with open-source Large Language Models (LLMs) locally on personal hardware, evaluating model parameters and prototyping custom utility integrations outside of cloud constraints.</p>
                 </div>
                 <div style="border-left: 2px solid var(--accent); padding-left: 0.75rem;">
-                    <h4 style="color: var(--secondary); font-size: 1rem; margin-bottom: 0.25rem;">Hardware Labs & Custom Builds</h4>
+                    <h4 style="color: var(--secondary); font-size: 1rem; margin-bottom: 0.25rem;">Hardware Labs & Custom PCs</h4>
                     <p style="font-size: 0.9rem;">Designed and built high-performance custom PCs from the ground up. Passionate about repurposing retired hardware assets—such as transforming legacy laptop machinery into functional, localized home server nodes.</p>
                 </div>
                 <div style="border-left: 2px solid var(--accent); padding-left: 0.75rem;">
@@ -160,19 +159,19 @@
             
             <div class="project-block">
                 <h3>Enterprise AI Engineering & Log Decoding</h3>
-                <div class="project-meta">Technologies Used: <strong>Enterprise Codex | Python | UDS Protocol | Hex Telemetry</strong></div>
-                <p>Utilized enterprise Codex environments to design and deploy custom AI agents. Engineered a proprietary diagnostic log parser that extracts raw hexadecimal matrices from UDS trace logs and programmatically maps them to standard Cummins parameters and human-readable signal naming values[cite: 3]. This automation minimized manual translation delays and drastically increased root-cause determination speed for field support engineering.</p>
+                <div class="project-meta">Core Technologies: <strong>Enterprise Codex | Python (Basic) | UDS Protocol | Hex Telemetry</strong>[cite: 3]</div>
+                <p>Utilized enterprise Codex environments to design and deploy custom AI agents[cite: 3]. Engineered a proprietary diagnostic log parser that extracts raw hexadecimal matrices from UDS trace logs and programmatically maps them to standard Cummins parameters and human-readable signal naming values[cite: 3]. This automation minimized manual translation delays and drastically increased root-cause determination speed for field support engineering.</p>
             </div>
 
             <div class="project-block">
                 <h3>Automated Defect Engineering Pipeline</h3>
-                <div class="project-meta">Technologies Used: <strong>Computer Vision Agents | PTC Integrity | UI Error Mapping</strong>[cite: 3]</div>
+                <div class="project-meta">Core Technologies: <strong>Computer Vision Agents | PTC Integrity | UI Error Mapping</strong>[cite: 3]</div>
                 <p>Architected an intelligent vision-based AI tool that evaluates platform screenshots of software errors, processes visual anomalies, and auto-generates structured, release-ready bug logs within PTC Integrity following developer templates[cite: 3]. Successfully eliminated manual ticket formatting errors, enabling testing teams to pass comprehensive reproduction parameters to developers instantaneously.</p>
             </div>
 
             <div class="project-block">
                 <h3>Field Test Collaboration & Communication Infrastructure</h3>
-                <div class="project-meta">Technologies Used: <strong>SharePoint Administration | Microsoft 365 | Automation Notification Nodes</strong>[cite: 3]</div>
+                <div class="project-meta">Core Technologies: <strong>SharePoint Administration | Microsoft 365 Workspace | Automated Notification Nodes</strong>[cite: 3]</div>
                 <p>Architected and managed a centralized SharePoint environment serving as the primary infrastructure to log field bugs, distribute live code notifications, and coordinate testing tracking for 300+ field operators[cite: 3]. Built automatic notifications to ensure testing loops and critical platform updates are communicated across multi-regional pools in real time.</p>
             </div>
         </section>
@@ -186,12 +185,12 @@
                     <span class="job-title">Technical Lead - User Acceptance Testing & OTIS Project Coordinator</span>
                     <span class="job-meta">Mar 2020 – Present</span>
                 </div>
-                <div class="job-company">Cummins (Direct Internal Employee) | Columbus, IN[cite: 3]</div>
+                <div class="job-company">Cummins Inc. (Direct Internal Employee) | Columbus, IN[cite: 3]</div>
                 <ul>
                     <li>Serve as the Level 3 Support authority for Guidanz Diagnostic Toolkit (DTK) Windows and Mobile platforms, using advanced development tools and remote troubleshooting sessions to perform deep-dive root cause analysis on field issues[cite: 3].</li>
-                    <li>Direct end-to-end User Acceptance Testing (UAT) strategies across complex diagnostic environments for flagship applications, including Guidanz DTK and Cummins INSITE, managing a core team of 10 UAT testers[cite: 2, 3].</li>
+                    <li>Direct end-to-end User Acceptance Testing (UAT) strategies across complex diagnostic environments for flagship applications, including Guidanz DTK and Cummins INSITE, managing a core team of 10 UAT testers[cite: 3].</li>
                     <li>Coordinate expansive Field Testing operations across a user base of over 300 operators, utilizing custom-managed SharePoint notification nodes to log incoming software issues and keep deployment pools synchronized[cite: 3].</li>
-                    <li>Serve as the Subject Matter Expert (SME) for the OTIS tool development process, acting as the critical technical liaison bridging tier-1 OEMs with internal Controls, Calibrations, and Tool Integrators to manage custom software development via UDS protocol[cite: 2, 3].</li>
+                    <li>Serve as the Subject Matter Expert (SME) for the OTIS tool development process, acting as the critical technical liaison bridging tier-1 OEMs with internal Controls, Calibrations, and Tool Integrators to manage custom software development via UDS protocol[cite: 3].</li>
                 </ul>
             </div>
 
@@ -202,10 +201,10 @@
                 </div>
                 <div class="job-company">The AME Group (Contracted to Cummins) | Columbus, IN[cite: 3]</div>
                 <ul>
-                    <li>Directed the comprehensive system testing blueprint for flagship heavy-duty automotive fleet service applications, leading an onshore team of 6 software systems testers and coordinating with the offshore test lead[cite: 2, 3].</li>
+                    <li>Directed the comprehensive system testing blueprint for flagship heavy-duty automotive fleet service applications, leading an onshore team of 6 software systems testers and coordinating with the offshore test lead[cite: 3].</li>
                     <li>Managed end-to-end test planning, daily asset workload distribution, defect tracking metrics, and technical milestone reporting within PTC Integrity for the primary service tool environment[cite: 3].</li>
-                    <li>Acted as the primary authority for release readiness, authoring and presenting comprehensive Field Test Readiness Reviews and Production Readiness Review frameworks directly to engineering stakeholders for final deployment sign-off[cite: 2, 3].</li>
-                    <li>Led targeted process-improvement projects that significantly reduced overall testing cycles by mapping critical user workflows and identifying historical software pain points to prioritize deep-dive testing on high-risk areas[cite: 2, 3].</li>
+                    <li>Acted as the primary authority for release readiness, authoring and presenting comprehensive Field Test Readiness Reviews and Production Readiness Review frameworks directly to engineering stakeholders for final deployment sign-off[cite: 3].</li>
+                    <li>Led targeted process-improvement projects that significantly reduced overall testing cycles by mapping critical user workflows and identifying historical software pain points to prioritize deep-dive testing on high-risk areas[cite: 3].</li>
                 </ul>
             </div>
 
@@ -216,7 +215,7 @@
                 </div>
                 <div class="job-company">The AME Group (Contracted to Cummins) | Columbus, IN[cite: 3]</div>
                 <ul>
-                    <li>Executed rigid validation routines, manual code testing matrices, and real-world system simulation scenarios on the flagship Cummins INSITE platform, balancing static bench simulations with real-world diagnostic testing on live heavy-duty trucks[cite: 2, 3].</li>
+                    <li>Executed rigid validation routines, manual code testing matrices, and real-world system simulation scenarios on the flagship Cummins INSITE platform, balancing static bench simulations with real-world diagnostic testing on live heavy-duty trucks[cite: 3].</li>
                     <li>Identified, isolated, and documented software execution anomalies, partnering with the development team to perform rigorous regression testing and verify technical fixes within tracked pipelines[cite: 3].</li>
                 </ul>
             </div>
@@ -228,10 +227,10 @@
                 </div>
                 <div class="job-company">Arvin's / Columbus Components Group | Columbus, IN[cite: 3]</div>
                 <ul>
-                    <li>Advanced rapidly through a sequence of high-precision industrial leadership roles from initial Production Associate to Senior Group Leader, managing cross-functional operations across two primary draw lines, the Large Pan Assembly (LPA) sector, and 8 dedicated welding cells, directly overseeing 32+ operators[cite: 2, 3].</li>
-                    <li>Managed rigid plant quality-control protocols, utilizing precision gauges and Coordinate Measuring Machine (CMM) hardware to conduct critical hourly inspections, ensuring custom manufacturing tooling remained strictly within engineering tolerances[cite: 2, 3].</li>
-                    <li>Completed a dedicated 2-year technical rotation within the custom tool shop, mastering the setup, operation, and maintenance of industrial drills, lathes, manual mills, and precision welding equipment to minimize line downtime[cite: 2, 3].</li>
-                    <li>Collaborated directly with the plant Business Unit Manager to optimize production schedules, resolve complex hardware issues, and maintain safety compliance across lines, formally accepting an advancement to Production Supervisor prior to facility closure[cite: 2, 3].</li>
+                    <li>Advanced rapidly through a sequence of high-precision industrial leadership roles from initial Production Associate to Senior Group Leader, managing cross-functional operations across two primary draw lines, the Large Pan Assembly (LPA) sector, and 8 dedicated welding cells, directly overseeing 32+ operators[cite: 3].</li>
+                    <li>Managed rigid plant quality-control protocols, utilizing precision gauges and Coordinate Measuring Machine (CMM) hardware to conduct critical hourly inspections, ensuring custom manufacturing tooling remained strictly within engineering tolerances[cite: 3].</li>
+                    <li>Completed a dedicated 2-year technical rotation within the custom tool shop, mastering the setup, operation, and maintenance of industrial drills, lathes, manual mills, and precision welding equipment to minimize line downtime[cite: 3].</li>
+                    <li>Collaborated directly with the plant Business Unit Manager to optimize production schedules, resolve complex hardware issues, and maintain safety compliance across lines, formally accepting an advancement to Production Supervisor prior to facility closure[cite: 3].</li>
                 </ul>
             </div>
 
@@ -242,8 +241,8 @@
                 </div>
                 <div class="job-company">Wendy's International | Hartsville / Columbus, IN[cite: 3]</div>
                 <ul>
-                    <li>Promoted from frontline crew member to Team Lead and Full Store Manager within a two-year timeline[cite: 2, 3].</li>
-                    <li>Oversaw day-to-day restaurant workflows, master labor cost scheduling, vendor inventory procurement, and team metrics to enforce strict service excellence standards[cite: 2, 3].</li>
+                    <li>Promoted from frontline crew member to Team Lead and Full Store Manager within a two-year timeline[cite: 3].</li>
+                    <li>Oversaw day-to-day restaurant workflows, master labor cost scheduling, vendor inventory procurement, and team metrics to enforce strict service excellence standards[cite: 3].</li>
                 </ul>
             </div>
 
@@ -254,11 +253,11 @@
             <h2>Commendations & Corporate Citizenship</h2>
             <div class="project-item" style="border-left: none; padding-left: 0; margin-bottom: 1rem;">
                 <h3 style="color: var(--accent);">Internal Recognition & Performance Excellence</h3>
-                <p>Consistently awarded **Employee of the Quarter** milestones during corporate tenure at Cummins. Maintain an exemplary performance profile within the internal Talent Management System (TMS), regularly achieving positive peer reviews, manager commendations, and high-tier organizational alignment ratings[cite: 2, 3].</p>
+                <p>Consistently awarded **Employee of the Quarter** milestones during corporate tenure at Cummins. Maintain an exemplary performance profile within the internal Talent Management System (TMS), regularly achieving positive peer reviews, manager commendations, and high-tier organizational alignment ratings[cite: 3].</p>
             </div>
             <div class="project-item" style="border-left: none; padding-left: 0; margin-bottom: 0;">
                 <h3 style="color: var(--accent);">Every Employee Every Community (EEEC) Stewardship</h3>
-                <p>Active leader within the Cummins EEEC community engagement infrastructure, dedicating routine volunteer operational hours at regional food pantries to organize logistically, coordinate distribution networks, and deliver pre-packed grocery assets to families in need[cite: 2, 3].</p>
+                <p>Active leader within the Cummins EEEC community engagement infrastructure, dedicating routine volunteer operational hours at regional food pantries to organize logistically, coordinate distribution networks, and deliver pre-packed grocery assets to families in need[cite: 3].</p>
             </div>
         </section>
 
@@ -273,7 +272,7 @@
                 <p><em>Ivy Tech Community College</em>[cite: 3]</p>
             </div>
             <div class="cert-list">
-                <p><strong>Professional Certifications:</strong> Six Sigma Yellow Belt (Cummins Infrastructure) | Network Infrastructure & Systems Validation | Computer Support & Hardware Diagnostics | CompTIA A+[cite: 2, 3]</p>
+                <p><strong>Professional Certifications:</strong> Six Sigma Yellow Belt (Cummins Infrastructure) | Network Infrastructure & Systems Validation | Computer Support & Hardware Diagnostics | CompTIA A+[cite: 3]</p>
             </div>
         </section>
 
@@ -283,7 +282,6 @@
             <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto 1.5rem auto;">Interested in discussing technical software automation, diagnostic architectures, or collaborative quality assurance workflows?</p>
             <div class="btn-container" style="justify-content: center;">
                 <a href="https://github.com/shunt56" class="btn">View GitHub Repositories</a>
-                <!-- You can link your downloaded Word file here once hosted -->
                 <a href="Steven_Huntington_Executive_Resume.docx" class="btn btn-secondary" download>Download Word Document Resume</a>
             </div>
         </section>
